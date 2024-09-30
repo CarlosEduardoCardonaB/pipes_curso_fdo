@@ -1,17 +1,23 @@
 import { NgModule } from '@angular/core';
 import { MenuModule } from 'primeng/menu';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MenubarModule } from 'primeng/menubar';
-import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from 'primeng/button';
+import { CardModule } from 'primeng/card';
+import { FieldsetModule } from 'primeng/fieldset';
+import { PanelModule } from 'primeng/panel';
+// import { ToastModule } from 'primeng/toast';
 
 
 
 @NgModule({
  exports:[
     MenuModule,
-    BrowserAnimationsModule,
     MenubarModule,
-    ToastModule
+    ButtonModule,
+    CardModule,
+    FieldsetModule,
+    PanelModule
+    //ToastModule
   ]
 })
 export class PrmieNgModule { }

@@ -1,1 +1,31 @@
-<p>numbers-page works!</p>
+<p-panel header="Pipes núméricos" class="p-2">
+  <!-- <h1>Pipes Básicos</h1> -->
+  <p>
+    Pipes incluidos en Angular - Usualmente con el Common Module
+  </p>
+</p-panel>
+
+<div class="grid">
+  <div class="col-12 md:col-4">
+    <!-- con el argumento después del number:'1.2-2' definimos cuantos decimales vamos a mostrar al usuario. en este caso mostramos solo dos decimales -->
+    <p-card header="Ventas netas" subheader="Del presente año">
+        {{totalSells + 345999 | number:'1.2-2'}}
+    </p-card>
+  </div>
+
+    <div class="col-12 md:col-4">
+      <!-- con el symbol-narrow le asignamos el símbolo de la moneda que le digamos en el iso 3. por ejemplo aqui el resultado sera L122,000... -->
+      <p-card header="Ventas brutas" subheader="Del presente año">
+          {{totalSells | currency:'HNL': 'symbol-narrow':'1.0-4'}}
+      </p-card>
+      <!-- En este caso en el último argumento le decimos cuantos decimales mostrar al usuario del valor. En este ejemplo mostramos 4 decimales -->
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Ganancia porcentual" subheader="Del presente año">
+        {{percent | percent:'1.2-2'}}
+    </p-card>
+  </div>
+
+</div>
+

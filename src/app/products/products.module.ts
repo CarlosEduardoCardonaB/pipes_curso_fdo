@@ -4,6 +4,7 @@ import { productsRoutingModule } from './products-routing.module';
 import { BasicsPageComponent } from './pages/basics-page/basics-page.component';
 import { NumbersPageComponent } from './pages/numbers-page/numbers-page.component';
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
+import { PrmieNgModule } from '../prmie-ng/prmie-ng.module';
 
 
 
@@ -15,7 +16,8 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
   ],
   imports: [
     CommonModule,
-    productsRoutingModule
+    productsRoutingModule,
+    PrmieNgModule
   ]
 })
 export class ProductsModule { }
