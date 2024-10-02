@@ -6,6 +6,9 @@ import { NumbersPageComponent } from './pages/numbers-page/numbers-page.componen
 import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.component';
 import { PrmieNgModule } from '../prmie-ng/prmie-ng.module';
 import { OrderComponent } from './pages/order/order.component';
+import { toggleCasePipe } from './pipes/toggle-case.pipe';
+import { CanFlyPipe } from './pipes/can-fly.pipe';
+import { SortByPipe } from './pipes/sort-by.pipe';
 
 
 
@@ -14,7 +17,11 @@ import { OrderComponent } from './pages/order/order.component';
     BasicsPageComponent,
     NumbersPageComponent,
     UncommonPageComponent,
-    OrderComponent
+    OrderComponent,
+    //Este es mi pipe personalizado
+    toggleCasePipe,
+    CanFlyPipe,
+    SortByPipe
   ],
   imports: [
     CommonModule,
