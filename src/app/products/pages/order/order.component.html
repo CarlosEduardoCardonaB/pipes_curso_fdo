@@ -51,7 +51,7 @@
 <div class="grid">
   <div class="col mt-2">
     <p-panel header="Heros">
-      <p-table [value]="hero | sortPipe: orderBy" [tableStyle]="{ 'min-width': '50rem' }">
+      <p-table [value]="hero | sortPipe: orderByKey" [tableStyle]="{ 'min-width': '50rem' }">
         <ng-template pTemplate="header">
             <tr>
                 <th>Nombre</th>

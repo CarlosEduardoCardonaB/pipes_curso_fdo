@@ -10,7 +10,7 @@ import { Color, Hero } from '../../interfaces/hero.interface';
 export class OrderComponent implements OnInit{
 
   public isUpperCase: boolean = false;
-  public orderBy: keyof Hero | '' | undefined = '';
+  public orderByKey: keyof Hero | '' | undefined = '';
   public hero : Hero[] = [
     {
       name: 'Superman',
@@ -40,7 +40,7 @@ export class OrderComponent implements OnInit{
   ]
 
   sortHeroes(order: keyof Hero){
-    this.orderBy = order;
+    this.orderByKey = order;
   }
 
 
